@@ -1,5 +1,5 @@
 <!-- nav -->
-<nav class="navbar navbar-expand navbar-light bg-light">
+<nav class="navbar navbar-expand navbar-light bg-light justify-content-between">
   <div class="navbar-nav">
     <a class="navbar-brand mb-lg-0 h1 " routerLink="/">Taniti Islands</a>
     <li class="nav-item">
@@ -23,15 +23,17 @@
     <li class="nav-item">
       <a class="nav-link" routerLink="/information"> Island Information </a>
     </li>
-    <li class="nav-item">
-      <a class="btn btn-link" routerLink="/booking"> Book A Trip </a>
-    </li>
+  </div>
+  <div>
+    <button class="btn-primary"
+            style="background: #22BED9; border: none; border-radius: 5px; padding: 10px; color: #FFFFFF"
+            routerLink="/booking" >Book A Trip</button>
   </div>
 </nav>
 
 
 <!-- main content container -->
-<div class="jumbotron">
+<div>
   <router-outlet></router-outlet>
 </div>
 <footer class="bg-body-tertiary text-center text-lg-start">
